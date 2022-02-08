@@ -1,0 +1,73 @@
+{
+  "root": "apps/buyer-portal",
+  "sourceRoot": "apps/buyer-portal/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/buyer-portal",
+        "index": "apps/buyer-portal/src/index.html",
+        "baseHref": "/",
+        "main": "apps/buyer-portal/src/main.tsx",
+        "polyfills": "apps/buyer-portal/src/polyfills.ts",
+        "tsConfig": "apps/buyer-portal/tsconfig.app.json",
+        "assets": [
+          "apps/buyer-portal/src/favicon.ico",
+          "apps/buyer-portal/src/assets"
+        ],
+        "styles": ["apps/buyer-portal/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/buyer-portal/src/environments/environment.ts",
+              "with": "apps/buyer-portal/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "buyer-portal:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "buyer-portal:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/buyer-portal/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/buyer-portal"],
+      "options": {
+        "jestConfig": "apps/buyer-portal/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

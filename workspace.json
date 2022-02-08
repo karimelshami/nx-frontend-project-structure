@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "buyer-portal": "apps/buyer-portal",
+    "buyer-portal-e2e": "apps/buyer-portal-e2e"
+  }
+}
