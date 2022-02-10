@@ -1,0 +1,23 @@
+{
+  "root": "libs/buyer-portal/utils/util-core",
+  "sourceRoot": "libs/buyer-portal/utils/util-core/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/util-core/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/util-core"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/util-core/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

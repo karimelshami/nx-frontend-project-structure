@@ -1,0 +1,23 @@
+{
+  "root": "libs/buyer-portal/ui/ui-components",
+  "sourceRoot": "libs/buyer-portal/ui/ui-components/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/ui-components/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/ui-components"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/ui-components/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

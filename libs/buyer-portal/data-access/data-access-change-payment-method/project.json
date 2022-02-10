@@ -1,0 +1,27 @@
+{
+  "root": "libs/buyer-portal/data-access/data-access-change-payment-method",
+  "sourceRoot": "libs/buyer-portal/data-access/data-access-change-payment-method/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/buyer-portal/data-access-change-payment-method/**/*.js"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/buyer-portal/data-access-change-payment-method"
+      ],
+      "options": {
+        "jestConfig": "libs/buyer-portal/data-access-change-payment-method/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

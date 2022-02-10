@@ -1,0 +1,25 @@
+{
+  "root": "libs/buyer-portal/data-access/data-access-invoices-list",
+  "sourceRoot": "libs/buyer-portal/data-access/data-access-invoices-list/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/buyer-portal/data-access-invoices-list/**/*.js"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/data-access-invoices-list"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/data-access-invoices-list/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

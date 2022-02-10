@@ -1,0 +1,33 @@
+{
+  "root": "libs/buyer-portal/pages/page-login",
+  "sourceRoot": "libs/buyer-portal/pages/page-login/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/buyer-portal/page-login",
+        "main": "libs/buyer-portal/page-login/src/index.ts",
+        "tsConfig": "libs/buyer-portal/page-login/tsconfig.lib.json",
+        "assets": ["libs/buyer-portal/page-login/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/page-login/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/page-login"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/page-login/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

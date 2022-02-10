@@ -1,0 +1,25 @@
+{
+  "root": "libs/buyer-portal/features/feature-magic-link-login",
+  "sourceRoot": "libs/buyer-portal/features/feature-magic-link-login/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/buyer-portal/feature-magic-link-login/**/*.js"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/feature-magic-link-login"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/feature-magic-link-login/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

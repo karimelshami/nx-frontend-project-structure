@@ -14,7 +14,47 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@buyer-portal/pages/login": [
+        "libs/buyer-portal/pages/page-login/src/index.ts"
+      ],
+      "@buyer-portal/data-access/auth": [
+        "libs/buyer-portal/data-access/data-access-auth/src/index.js"
+      ],
+      "@buyer-portal/data-access/change-payment-method": [
+        "libs/buyer-portal/data-access/data-access-change-payment-method/src/index.js"
+      ],
+      "@buyer-portal/data-access/invoice-details": [
+        "libs/buyer-portal/data-access/data-access-invoice-details/src/index.js"
+      ],
+      "@buyer-portal/data-access/invoices-list": [
+        "libs/buyer-portal/data-access/data-access-invoices-list/src/index.js"
+      ],
+      "@buyer-portal/features/change-payment-method": [
+        "libs/buyer-portal/features/feature-change-payment-method/src/index.js"
+      ],
+      "@buyer-portal/pages/invoice-details": [
+        "libs/buyer-portal/pages/page-invoice-details/src/index.js"
+      ],
+      "@buyer-portal/features/invoice-details-view": [
+        "libs/buyer-portal/features/feature-invoice-details-view/src/index.js"
+      ],
+      "@buyer-portal/pages/invoice-list": [
+        "libs/buyer-portal/pages/page-invoice-list/src/index.js"
+      ],
+      "@buyer-portal/features/invoices-table": [
+        "libs/buyer-portal/features/feature-invoices-table/src/index.js"
+      ],
+      "@buyer-portal/features/magic-link-login": [
+        "libs/buyer-portal/features/feature-magic-link-login/src/index.js"
+      ],
+      "@buyer-portal/ui/ui-components": [
+        "libs/buyer-portal/ui/ui-components/src/index.js"
+      ],
+      "@buyer-portal/ui/ui-tokens": ["libs/buyer-portal/ui/ui-tokens/src/index.js"],
+      "@buyer-portal/ui/ui-utils": ["libs/buyer-portal/ui/ui-utils/src/index.js"],
+      "@buyer-portal/utils/util-core": ["libs/buyer-portal/utils/util-core/src/index.js"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -2,6 +2,21 @@
   "version": 2,
   "projects": {
     "buyer-portal": "apps/buyer-portal",
-    "buyer-portal-e2e": "apps/buyer-portal-e2e"
+    "data-access-auth": "libs/buyer-portal/data-access/data-access-auth",
+    "data-access-change-payment-method": "libs/buyer-portal/data-access/data-access-change-payment-method",
+    "data-access-invoice-details": "libs/buyer-portal/data-access/data-access-invoice-details",
+    "data-access-invoices-list": "libs/buyer-portal/data-access/data-access-invoices-list",
+    "buyer-portal-e2e": "apps/buyer-portal-e2e",
+    "feature-change-payment-method": "libs/buyer-portal/features/feature-change-payment-method",
+    "feature-invoice-details-view": "libs/buyer-portal/features/feature-invoice-details-view",
+    "feature-invoices-table": "libs/buyer-portal/features/feature-invoices-table",
+    "feature-magic-link-login": "libs/buyer-portal/features/feature-magic-link-login",
+    "page-invoice-details": "libs/buyer-portal/pages/page-invoice-details",
+    "page-invoice-list": "libs/buyer-portal/pages/page-invoice-list",
+    "page-login": "libs/buyer-portal/pages/page-login",
+    "ui-components": "libs/buyer-portal/ui/ui-components",
+    "ui-tokens": "libs/buyer-portal/ui/ui-tokens",
+    "ui-utils": "libs/buyer-portal/ui/ui-utils",
+    "util-core": "libs/buyer-portal/utils/util-core"
   }
 }

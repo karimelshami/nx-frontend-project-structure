@@ -1,0 +1,23 @@
+{
+  "root": "libs/buyer-portal/pages/page-invoice-details",
+  "sourceRoot": "libs/buyer-portal/pages/page-invoice-details/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/page-invoice-details/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/page-invoice-details"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/page-invoice-details/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/buyer-portal/features/feature-invoices-table",
+  "sourceRoot": "libs/buyer-portal/features/feature-invoices-table/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/feature-invoices-table/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/feature-invoices-table"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/feature-invoices-table/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

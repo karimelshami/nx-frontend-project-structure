@@ -1,0 +1,25 @@
+{
+  "root": "libs/buyer-portal/features/feature-change-payment-method",
+  "sourceRoot": "libs/buyer-portal/features/feature-change-payment-method/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/buyer-portal/features/feature-change-payment-method/**/*.js"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/feature-change-payment-method"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/feature-change-payment-method/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/buyer-portal/ui/ui-tokens",
+  "sourceRoot": "libs/buyer-portal/ui/ui-tokens/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/buyer-portal/ui-tokens/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/buyer-portal/ui-tokens"],
+      "options": {
+        "jestConfig": "libs/buyer-portal/ui-tokens/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
